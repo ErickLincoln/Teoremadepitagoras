@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
 <body>
 
@@ -16,12 +18,23 @@
 <body>
     <div class="w3-mid">
         <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <p>Defina o tamanho dos catetos 
-            A:<var><input type="number"></var>e 
-            B:<var><input type="number"></var>, ou a Hipotenusa 
-            C:<var><input type="number"></var>
+        <p>Defina o tamanho dos catetos</p>
+        A:<var><input type="number"></var>e 
+        B:<var><input type="number"></var>, ou a Hipotenusa 
+        C:<var><input type="number"></var>
+        </div>
+        </div>
+          <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+          <py-script>
+            import math
+            def calc_pitagoras(LadoA, LadoB, LadoC):
+              LadoA = int(input('Insira o valor:'))
+              LadoB = int(input('Insira o valor:'))
+              LadoC = math.sqrt(LadoA*LadoA + LadoB*LadoB)
+                          
+              print(LadoA, LadoB, LadoC)
+            </py-script>
+          </div>
             
-        </p>
-    
 </body>
 </html>
