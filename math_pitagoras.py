@@ -6,3 +6,4 @@ def calc_pitagoras(LadoA, LadoB, LadoC):
     LadoC = math.sqrt(LadoA*LadoA + LadoB*LadoB)
 
     print(LadoA, LadoB, LadoC)
+    #aplicação de função, chamada simples.

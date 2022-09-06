@@ -13,3 +13,5 @@ def calculadora():
     
 if __name__ == '__main__':
         app.run(debug= True)
+
+#irei realizar algumas integrações utilizando interfaces gráficas logo adiante.
