@@ -5,6 +5,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  /* Efeito de sobreposição no cabeçalho */
+header {
+  position: relative;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://i.imgur.com/Q9ZNXsT.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+/* Efeito de zoom no botão de cálculo */
+a:hover button {
+  transform: scale(1.2);
+}
+
+/* Efeito de hover nas imagens dos projetos */
+.w3-grayscale img:hover {
+  opacity: 0.6;
+}
+
+/* Efeito de transição no hover das imagens dos projetos */
+.w3-grayscale img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Efeito de transição na navegação */
+.w3-bar-item:hover {
+  color: #fff;
+  background-color: #4CAF50;
+}
 </head>
 <body>
 
